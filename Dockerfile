@@ -7,7 +7,7 @@ ENV RUSTUP_HOME=/usr/local/rustup \
 
 RUN apt-get -y update
 RUN apt-get -y upgrade
-RUN apt-get -y install wget libssl-dev libssl1.1
+RUN apt-get -y install wget libssl-dev libssl1.1 build-essential
 RUN set -eux; \
     url="https://static.rust-lang.org/rustup/archive/1.25.1/x86_64-unknown-linux-gnu/rustup-init"; \
     wget "$url"; \
